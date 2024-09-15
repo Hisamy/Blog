@@ -16,7 +16,8 @@ nav {
 }
 main{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     color: aliceblue;
 
 }
@@ -44,8 +45,6 @@ a:hover {
 #amy{
     grid-column: 1/2;
     grid-row: 1/2;
-    width: 460px;
-    height: 330px;
     padding-top: 1px;
     background-color: #1a4084;
 
@@ -58,17 +57,16 @@ a:hover {
     margin-left: 15px;
 }
 h2{
-    margin-bottom: 0px;
     text-align: center;
 }
 #musica{
     background-color: #7e2323;
     padding-top: 1px;
     width: auto;
-    grid-column: 2/5;
-    grid-row: 1/4;
+    height: auto;
+    grid-column: 2/4;
+    grid-row: 1/3;
 }
-
 
 figure img{
     width: 170px;
@@ -81,31 +79,79 @@ figure img{
     margin: 15px;
     
 }
-#escuela{
-    position: relative;
-    background-color:black;
-    grid-column: 1/2;
-    grid-row: 2/4;
-    padding: 1px;
-}
 .textoEscuela{
     font-size: large;
-    margin-left: 20px;
-    margin-top: 30px;
+    margin-left: 10px;
+    margin-top: 60px;
 }
-#estrella{
-    position: absolute;
-    bottom: 190px;   
-    left: 415px;  
-    width: 70px; 
-    height: auto;
-    transform: rotate(30deg);
+ 
+#escuela{
+    background-color:black;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding: 1px;
 }
+
 span{
     color: #6a81a8;
 }
 #cinefila{
     background-color: #1a4084;
-    grid-column: 1/5;
-    grid-row: 5/8;
+    grid-column: 1/4;
+    grid-row: 3/5;
 }
+.star {
+    position: absolute;
+    margin-top: 280px; 
+    margin-left: 460px;
+    transform: rotate(30deg); 
+}
+
+.star img {
+    width: 70px; 
+    height: auto;
+    
+}
+.textoCinefila{
+    margin: 1px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr; 
+    column-gap: 20px; 
+}
+.textoCinefila img{
+    height: 200px;
+    
+}
+.lalaland{
+    grid-column: 1 / 2; 
+    grid-row: 1 / 2;
+    display: flex;
+    flex-direction: row;
+}
+.breakingbad {
+    grid-column: 1/2; 
+    grid-row: 2/3;  
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.hunterxhunter {
+    grid-column: 2/3; 
+    grid-row: 1/2;  
+    display: flex;
+    flex-direction: row;
+}
+.perksofbeingawallflower{
+    grid-column: 2/3; 
+    grid-row: 2/3;
+    margin-top: 20px;  
+    display: flex;
+    flex-direction: row;
+}
+.textoHxH, .textoLalaland, .textoBrBa,.textoPobaw{
+    margin-left: 50px;
+}
+
